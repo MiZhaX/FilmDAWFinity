@@ -1,0 +1,227 @@
+body{
+    background: url("./img/fondo.png") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+.contenedor {
+    position: fixed; 
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000; 
+}
+
+.detalles {
+    background: url("./img/fondo_peli.png") no-repeat center center fixed; 
+    background-size: contain;
+    padding: 10px;
+    border-radius: 5%;
+    max-width: 600px;
+    max-height: 650px;
+    text-align: center;
+    position: relative; 
+    color: black;
+}
+
+.detalles h2{
+    margin-top: 0;
+}
+
+.detalles img{
+    max-height: 400px;
+    margin-top: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerrar:hover{
+    background: black;
+    color: red;
+}
+
+#lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2rem; 
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+.pelicula {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+    background: black;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pelicula:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pelicula img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 310px;
+    width: 209px;
+}
+
+.pelicula p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    color: white;
+    height: 36.8px;
+    
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscador{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+#busqueda {
+    width: 200px;
+    height: 20px;
+}
+
+.cabecera button {
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cabecera button:hover{
+    background-color: rgb(164, 162, 162);
+    border: none;
+}
+
+.cargarMas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#siguiente{
+    display: none;
+}
+
+#encontrados{
+    margin: 0;
+    margin-top: 1rem;
+    display: none;
+}
+.poster:hover{
+    cursor: pointer;
+}
+
+#carga-contenedor{
+    position: fixed; 
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000; 
+    visibility: hidden;
+}
+#informe-contenedor{
+    position: fixed; 
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000; 
+    display: none;
+}
+#informes {
+    position: relative; 
+    background: url(./img/fondo.png) no-repeat center center fixed;
+    background-size: contain;
+    padding: 2rem;
+    width: 850px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+#informes ol{
+    padding: 0;
+    padding-inline-start: 0;
+    margin: 0;
+    margin-left: 100px;
+}
+.cerrar-informe {
+    position: absolute;
+    bottom: 15px;
+    right: 15px; 
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerrar-informe:hover {
+    background: black;
+    color: red;
+}
+.funciones{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+.funciones button{
+    cursor: pointer;
+}
