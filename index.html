@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmDawFinity</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="funciones.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cabecera">
+        <h1 id="titulo">FilmDawfinity</h1>
+        <div class="buscador">
+            <input type="text" name="busqueda" id="busqueda" placeholder="Busca tu película favorita">
+            <button id="btn">Buscar</button>
+        </div>
+        <div class="funciones">
+            <button id="peliculas">Películas</button>
+            <button id="series">Series</button>
+            <button id="informe">Informe</button>
+        </div>
+        <p id="encontrados">Se han encontrado 0 resultados</p>
+    </div>
+    <div id="carga-contenedor">
+        <img src="./img/cargando.gif" alt="cargando..." id="carga">
+    </div>
+    <div id="informe-contenedor">
+        <div id="informes"></div>
+    </div>
+    <div id="lista"></div>
+</body>
+</html>
